@@ -53,3 +53,13 @@ These instructions will give you a checklist of what you need to do, but you'll 
 ### Challenge Level Easy
 
 Instructions will guide you through all the steps you need to do to fullfill the assignment. [See the instructions here](docs/instructions-easy.md).
+
+## What's next?
+
+If you are done early or feel that you want to learn more, here are a few things that weren't covered that I think you should look up:
+
+* .gitignore - Specifies intentionally untracked files to ignore https://git-scm.com/docs/gitignore
+* Merge Conflicts - Resolving a merge conflict using the command line https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line
+* Gitk - The Git repository browser https://git-scm.com/docs/gitk
+* Merging vs. Rebasing https://www.atlassian.com/git/tutorials/merging-vs-rebasing
+* Resetting, Checking Out & Reverting https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting
