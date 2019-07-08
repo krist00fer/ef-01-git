@@ -2,7 +2,7 @@
 
 *Notice: Some numbers have intentionally been removed from this checklist since they don't make sense with so little description. The titles on the checklist also have changed somewhat but the numbers are still kept to easily refer to the same position in the more detailed instructions you can find [here](instructions-easy.md).*
 
-There are more than one way of solving the assignment, the below checklist provide one way to do it.
+There is more than one way of solving the assignment, the below checklist provide one way to do it.
 
 1. Find the Repository
 
