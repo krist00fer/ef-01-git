@@ -35,7 +35,7 @@ git remote -v
 git branch greeting
 git branch
 ```
-8. Checkout Branch - We should now have to brances `master`and `greeting`. You might have noticed a `*`next to one of the branches returned by the `git branch` command, this identifies what branch you are currently working with. You can get similar information by executing `git status`. To change into the newly created branch, execute:
+8. Checkout Branch - We should now have to branches `master`and `greeting`. You might have noticed a `*`next to one of the branches returned by the `git branch` command, this identifies what branch you are currently working with. You can get similar information by executing `git status`. To change into the newly created branch, execute:
 
 ```bash
 git checkout greeting
@@ -49,7 +49,7 @@ code ./src/greetings/hello-<your-name>.py
 
 > If you don't want to implement the script in Python then pick another extension to better fit the language of your choice.
 
-10. Implement the code - If you followed the above instructions you should now have Visual Studio Code open with an emtpy file. Copy past the following Python code into the file to implement the required logic. *Notice: Replace Kristofer with your name.*
+10. Implement the code - If you followed the above instructions you should now have Visual Studio Code open with an empty file. Copy paste the following Python code into the file to implement the required logic. *Notice: Replace Kristofer with your name.*
 
 ```python
 print("Hello Kristofer")
@@ -61,7 +61,7 @@ print("Hello Kristofer")
 python <path-to-your-file>
 ```
 
-> Some Python installations will require you to write commands like `py`or `python3` to correctly execute your script. This is outside the scope of this exercise and if you run into trouble, just assume that this part is correct and continue. WARNING! Never skip tests in real life.
+> Some Python installations will require you to write commands like `py` or `python3` to correctly execute your script. This is outside the scope of this exercise and if you run into trouble, just assume that this part is correct and continue. WARNING! Never skip tests in real life.
 
 12. Stage your changes - Make sure you saved the changes to the newly created file above and return to the terminal window. *You don't have to close Visual Studio Code if you don't want to.* Stage your changes by executing the following. *Notice: Make sure you are in the root folder of the ef-01-git project, otherwise git might not find the changed files. Also, the command `git status` can be omitted but help you understand what's happening.* 
 
@@ -94,9 +94,9 @@ git merge master
 
 > This exercise is created to avoid problems since most merges will work automatically due to the fact that most everyone will have a name that is unique (but not necessary). In real life, there will be changes that conflict with the ones you want to make and sometimes those can be quite tricky to solve. These kind of conflicts are named "Merge Conflicts".
 
-> If merge conflicts occurrs that you are unable to solve, connect with your instructur or a colleague for help.
+> If merge conflicts occurs that you are unable to solve, connect with your instructor or a colleague for help.
 
-16. Commit the merge - If a merge happened, we need to commit it. Git automatically stage the merge for you, but doesn't automatically commit the changes. This allows you to check that everything worked out according to your beleifs (i.e. you should test again at this point). Use `git status` to see if there are uncommited files and commit them using `git commit` if necessary:
+16. Commit the merge - If a merge happened, we need to commit it. Git automatically stage the merge for you but doesn't automatically commit the changes. This allows you to check that everything worked out according to your beliefs (i.e. you should test again at this point). Use `git status` to see if there are uncommitted files and commit them using `git commit` if necessary:
 
 ```bash
 git status
@@ -123,13 +123,13 @@ git push --set-upstream origin greeting
 # If you need to push additional changes you can just use git push directly from this branch.
 ```
 
-18. Use GitHub's User Interface to create a Pull Request - Your changes should now be visible in your repository on GitHub. *Important: Make sure you are looking at your forked repository and not the original repository since your changes won't be there yet.*. On your repositories main page, you can see a button named `Branch: master`, you can click on that one to `checkout` another branch in the user interface. *Notice that clicking and changing things in this web user interface will not automatically change things on your local repository.* Another button that has now been enabled on your GitHub Repository is the `Compare & pull request`. This  button has been highlighten since GitHub have understood that you have made changes that hasn't yet been accepted by the repository that you `forked` from. Click on that button to start the registration of your `Pull Request`or `PR`. Make sure the title of your `PR` describes what changes you have done and make sure the description even more tells what changes you are proposing and why. Once you are done click the `Create pull request` button to finally create the pull request.
+18. Use GitHub's User Interface to create a Pull Request - Your changes should now be visible in your repository on GitHub. *Important: Make sure you are looking at your forked repository and not the original repository since your changes won't be there yet.*. On your repositories main page, you can see a button named `Branch: master`, you can click on that one to `checkout` another branch in the user interface. *Notice that clicking and changing things in this web user interface will not automatically change things on your local repository.* Another button that has now been enabled on your GitHub Repository is the `Compare & pull request`. This button has been highlighted since GitHub have understood that you have made changes that hasn't yet been accepted by the repository that you `forked` from. Click on that button to start the registration of your `Pull Request` or `PR`. Make sure the title of your `PR` describes what changes you have done and make sure the description even more tells what changes you are proposing and why. Once you are done click the `Create pull request` button to finally create the pull request.
 
 19. Some human interaction required - You have now asked the maintainers of your source (upstream) repository to take a look at the changes you are suggesting. Depending on your suggestions, time constraints from the maintainers, etc. some time might pass here. The `pull request` you created in the above step was given a number so you can always get back to this `PR` later to check the status. It's not uncommon that you'll receive a comment or question in the chat system attached to the `PR`and it's up to you to monitor that. If you have done everything correctly and there are no questions asked then your PR might be accepted and merged into the repository and your mission is complete. If you are asked to do additional tasks (for example if your `PR` breaks the build) then go fix those changes locally and push them to your fork. As soon as your fork is updated, then the PR will be updated as well.
 
 > Contributing to someone else's repository is equally much a social game as a technical challenge. Being nice, following the rules, etc. will give your PR much higher chance of being accepted than the other way around.
 
-20. Synchronize local repository - At some point, your PR will hopefully be accepted and incorporated into the master branch of the upstream repository and your assignement is done. If you wanted to continue there are a few steps needed to clean up your local and forked repository.
+20. Synchronize local repository - At some point, your PR will hopefully be accepted and incorporated into the master branch of the upstream repository and your assignment is done. If you wanted to continue there are a few steps needed to clean up your local and forked repository.
 
 ```bash
 # Switch to the master branch 
@@ -145,8 +145,8 @@ git branch -D greeting
 git push --force
 ```
 
-> Warning - Anytime you use the flag --force you should be a bit cautious. The same goes here with `git push`. At this point, this is indeed what we want, but make sure you don't accidentaly overwite things you didn't want to.
+> Warning - Anytime you use the flag --force you should be a bit cautious. The same goes here with `git push`. At this point, this is indeed what we want, but make sure you don't accidentally overwrite things you didn't want to.
 
 21. Repeat from number 6 - You are now done and have successfully contributed to an OpenSource repository using a common pattern to handle change using Pull Requests. If you want to contribute more to the same project just start over from bullet 6, where you created a `feature branch` to contain your proposed changes.
 
-Thanks for you participation!
+Thanks for your participation!
